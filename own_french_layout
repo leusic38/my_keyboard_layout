@@ -1,0 +1,46 @@
+//My own keyboard layout
+partial alphanumeric_keys
+xkb_symbols "altgr-intl-fr" {
+
+   name[Group1]= "English (international AltGr dead keys French)";
+
+   include "us(intl)"
+
+// five dead keys moved into level3:
+
+   key <TLDE> { [    grave, asciitilde,  dead_grave,   dead_tilde      ] };
+   key <AC11> { [apostrophe,quotedbl,    dead_acute,   dead_diaeresis  ] };
+
+// diversions from the MS Intl keyboard:
+
+   key <AE01> { [        1,     exclam,   onesuperior,       exclamdown ] };
+   key <AE02> { [ 	 2,         at,        eacute,           Eacute ] };
+   key <AE06> { [	  6, dead_circumflex, ecircumflex,      Ecircumflex   ] };
+   key <AE07> { [	 7,    ampersand,        egrave,           Egrave ] };
+   key <AE08> { [	   8,   asterisk, onequarter,   threequarters ] };
+   key <AE09> { [	   9,  parenleft, leftsinglequotemark, onehalf ] };
+
+   key <AD01> { [	 q,          Q,   acircumflex,      Acircumflex ] };
+   key <AD03> { [	 e,          E,   oe,      OE ] };
+   key <AD04> { [        r,          R,    ediaeresis,       Ediaeresis ] };
+   key <AD06> { [	 y,          Y,   ucircumflex,      Ucircumflex ] };
+   key <AD07> { [	 u,          U,        ugrave,           Ugrave ] };
+   key <AD08> { [	 i,          I,   icircumflex,      Icircumflex ] };
+   key <AD09> { [	 o,          O,   ocircumflex,      Ocircumflex ] };
+   key <AD10> { [	 p,          P,    odiaeresis,       Odiaeresis ] };
+
+   key <AC01> { [	 a,          A,        agrave,           Agrave ] };
+   key <AC07> { [        j,	     J,    idiaeresis,       Idiaeresis ] };
+   key <AB02> { [        x,          X,            oe,               OE ] };
+   key <AB03> { [	 c,          C,      ccedilla,         Ccedilla ] };  
+   key <AB04> { [        v,          V,    registered,       registered ] }; 
+   key <AB08> { [    comma,       less,     Copyright,             cent ] };
+
+// onequarter etc (not in iso8859-15) moved to get three unshifted deadkeys:
+
+   key <AE06> { [        6, asciicircum, dead_circumflex, onequarter    ] };
+   key <AE07> { [        7, ampersand,   dead_horn,       onehalf       ] };
+   key <AE08> { [        8, asterisk,    dead_ogonek,     threequarters ] };
+
+   include "level3(ralt_switch)"
+};
