@@ -1,6 +1,5 @@
 ## Installation de mon layout de clavier
 
-![my layout](./keyboard_layout.png)
 
 installer le fichier frqw dans "/usr/share/X11/xkb/symbols
 
