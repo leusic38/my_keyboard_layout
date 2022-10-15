@@ -1,0 +1,57 @@
+partial alphanumeric_keys
+xkb_symbols "qw-altgr-fr" {
+
+   include "us(intl)"
+   name[Group1]= "French_Qwerty";
+
+
+// five dead keys moved into level3:
+
+   key <TLDE> { [    grave, asciitilde,  dead_grave,   dead_tilde      ] };
+
+// diversions from the MS Intl keyboard:
+
+   key <AE01> { [         1,  	      exclam,          onesuperior,       exclamdown ] };
+   key <AE02> { [   	  2,          	  at,          twosuperior,          onehalf ] };
+   key <AE03> { [   	  3, 	  numbersign,        threesuperior,         onethird ] };
+   key <AE04> { [   	  4,          dollar,           onequarter,    threequarters ] };
+   key <AE05> { [  	  5, 	     percent,             EuroSign,         sterling ] };
+   key <AE06> { [  	  6, dead_circumflex,          ecircumflex,      Ecircumflex ] };
+   key <AE07> { [  	  7,       ampersand,               egrave,           Egrave ] };
+   key <AE08> { [  	  8,        asterisk,           ediaeresis,       Ediaeresis ] };
+   key <AE09> { [  	  9,       parenleft,       dead_diaeresis,        twothirds ] };
+   key <AE10> { [	  0,	  parenright, 		    degree,   dead_abovering ] };
+
+   key <AD01> { [  	  q,               Q,          acircumflex,      Acircumflex ] };
+   key <AD03> { [  	  e,               E,               eacute,           Eacute ] };
+   key <AD04> { [         r,               R,           registered,        copyright ] };
+   key <AD05> { [	  t,	           T,         	 trademark             ] };
+   key <AD06> { [  	  y,               Y,          ucircumflex,      Ucircumflex ] };
+   key <AD07> { [  	  u,               U,               ugrave,           Ugrave ] };
+   key <AD08> { [  	  i,               I,          icircumflex,      Icircumflex ] };
+   key <AD09> { [  	  o,               O,          ocircumflex,      Ocircumflex ] };
+   key <AD10> { [  	  p,               P,           odiaeresis,       Odiaeresis ] };
+
+   key <AC01> { [  	  a,               A,               agrave,           Agrave ] };
+   key <AC02> { [	  s,		   S,       	adiaeresis,       Adiaeresis ] };
+   key <AC06> { [  	  h,               H,           udiaeresis,       Udiaeresis ] };
+   key <AC07> { [         j,	           J,           idiaeresis,       Idiaeresis ] };
+   key <AC10> { [ semicolon,	       colon,            paragraph,          section ] };  
+   key <AC11> { [apostrophe,	    quotedbl,         dead_cedilla,   	    currency ] };
+
+//   key <AB02> { [         x,               X,                 cent,       plusminus  ] };
+   key <AB03> { [	  c,               C,             ccedilla,         Ccedilla ] };  
+//   key <AB04> { [         v,               V,           registered,       registered ] }; 
+   key <AB05> { [	  b,	           B,              section,           ssharp ] };
+   key <AB08> { [     comma,            less,  leftsinglequotemark,             cent ] };
+   key <AB09> { [    period,	     greater, rightsinglequotemark,       dead_caron ] };
+   key <AB10> { [     slash,   	    question, 		 backslash,	questiondown ] };
+//Special audio keys
+     key <VOl-> {    [ XF86AudioLowerVolume ]   };
+     key <MUTE> {    [ XF86AudioMute ]   };
+     key <VOl+> {    [ XF86AudioRaiseVolume ]   };
+     key <I173> {    [ XF86AudioPrev ]   };
+     key <I172> {    [ XF86AudioPlay, XF86AudioPause ]   };
+     key <I171> {    [ XF86AudioNext ]   };
+   include "level3(ralt_switch)"
+};
